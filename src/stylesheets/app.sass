@@ -1,0 +1,28 @@
+*
+	scrollbar-width: none
+	scrollbar-color: #008A92 #003557
+
+	&::-webkit-scrollbar
+		width: 10px
+
+	&::-webkit-scrollbar-track
+		background: #003557
+
+	&::-webkit-scrollbar-thumb
+		background-color: #008A92
+		border-radius: 10px
+		border: 0px none #003557
+
+html
+	@apply min-h-full
+	@apply w-screen
+
+input
+	&::placeholder
+		@apply text-gray-400
+
+	&.disabled
+		@apply cursor-not-allowed
+
+.vm--modal
+	border-radius: 0.5rem!important
